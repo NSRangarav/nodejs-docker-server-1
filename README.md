@@ -45,7 +45,7 @@
          docker run -d -p 3000:3000 nodejs-app
    ```
 
-4. **Create a `.gitpod.Dockerfile`**:
+4. **Create a `.gitpod.Dockerfile` and 'index.js'file**:
    - In your project root, create a `.gitpod.Dockerfile` to specify the environment setup for Gitpod, including Docker installation:
 
    ```dockerfile
@@ -67,12 +67,27 @@
 
    USER gitpod
    ```
+   '''javascript (index.js)
+   const express = require("express");
+const app = express();
+const port = 3000;
 
-5. **Push Changes to GitHub**:
+app.get("/", (req, res) => {
+  res.send("Hello World!");
+});
+
+app.listen(port, () => {
+  console.log(`App listening on port ${port}`);
+});
+'''
+   
+
+6. **Push Changes to GitHub**:
    - Make sure all your files (`Dockerfile`, `.gitpod.yml`, `.gitpod.Dockerfile`, etc.) are committed and pushed to your GitHub repository.
 
-6. **Open in Gitpod**:
+7. **Open in Gitpod**:
    - Open your project in Gitpod by navigating to `https://gitpod.io/#https://github.com/YOUR_GITHUB_USERNAME/YOUR_REPO_NAME`.
+     
 
 ### Explanation
 
