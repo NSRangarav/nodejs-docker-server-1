@@ -1,0 +1,28 @@
+{
+  "name": "node-docker-app",
+  "version": "1.0.0",
+  "description": "this is my first docker app using nodejs programming language",
+  "main": "index.js",
+  "scripts": {
+     "start": "node index.js",
+     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NSRangarav/nodejs-docker-server-1.git"
+  },
+  "keywords": [
+    "nodejs",
+    "docker",
+    "containerization"
+  ],
+  "author": "N S Rangaramanujam",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NSRangarav/nodejs-docker-server-1/issues"
+  },
+  "homepage": "https://github.com/NSRangarav/nodejs-docker-server-1#readme",
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}
